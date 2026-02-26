@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <div className={styles.logoContainer}>
           <Link href="/" className={styles.logo}>
-            Intelliqon
+            intelliqon
           </Link>
         </div>
         

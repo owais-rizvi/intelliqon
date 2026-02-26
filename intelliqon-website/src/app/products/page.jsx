@@ -1,7 +1,7 @@
 import ProductGrid from '../../components/Products/ProductGrid';
 
 export const metadata = {
-  title: 'Protected Products & Solutions | Intelliqon',
+  title: 'Intelliqon: Innovative Products & Solutions | intelliqon',
   description: 'Secure access to Intelliqon enterprise solutions.',
 };
 
