@@ -1,0 +1,57 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #002b5c; /* Professional Navy Blue */
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+/* Drawing attention to the required Products tab */
+.highlightLink {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0056b3;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.highlightLink:hover {
+  background-color: #004494;
+}
