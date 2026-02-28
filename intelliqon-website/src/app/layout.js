@@ -1,20 +1,23 @@
+// src/app/layout.js
 import './globals.css';
-import Navbar from '../components/Layout/Navbar.jsx';
-import Footer from '../components/Layout/Footer';
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
 
 export const metadata = {
-  title: 'Intelliqon: Empowering Business with Innovative Solutions | intelliqon',
-  description: 'Premier consulting firm specializing in AI, Machine Learning, Cybersecurity, Chatbot Development, Data Analysis, and RPA.',
+  title: 'Intelliqon',
+  description: 'Empowering Growth through Expert Consulting',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {/* Navbar sits at the absolute top level */}
         <Navbar />
-        <main>
-          {children}
-        </main>
+        
+        {/* Page content gets injected here */}
+        <main>{children}</main>
+        
         <Footer />
       </body>
     </html>

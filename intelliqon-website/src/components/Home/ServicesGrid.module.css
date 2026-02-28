@@ -1,6 +1,6 @@
 .servicesSection {
   padding: 5rem 2rem;
-  background-color: #ffffff;
+  background-color: #f9fafb;
 }
 
 .container {
@@ -15,52 +15,117 @@
 
 .sectionTitle {
   font-size: 2.5rem;
-  color: #0a192f;
-  margin-bottom: 1rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .sectionSubtitle {
   font-size: 1.1rem;
-  color: #64748b;
+  color: #6b7280;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
 }
 
 .card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 2rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  padding: 2.5rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrapper svg {
+  width: 100%;
+  height: 100%;
 }
 
 .cardTitle {
   font-size: 1.3rem;
-  color: #0056b3;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
 }
 
 .cardDesc {
-  color: #4a5568;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
   flex-grow: 1;
 }
 
-.learnMore {
-  font-weight: 600;
-  color: #0a192f;
-  font-size: 0.9rem;
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-start;
 }
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.cardLink:hover .actionButton {
+  opacity: 0.85;
+}
+
+/* --- Dynamic Figma Theme Colors --- */
+.text-blue { color: #2563eb; }
+.bg-blue { background-color: #2563eb; }
+
+.text-purple { color: #6366f1; }
+.bg-purple { background-color: #6366f1; }
+
+.text-red { color: #dc2626; }
+.bg-red { background-color: #dc2626; }
+
+.text-green { color: #16a34a; }
+.bg-green { background-color: #16a34a; }
+
+.text-orange { color: #ea580c; }
+.bg-orange { background-color: #ea580c; }
+
+.text-teal { color: #0891b2; }
+.bg-teal { background-color: #0891b2; }
